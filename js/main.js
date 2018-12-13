@@ -23,3 +23,18 @@ const checkPalindrome = (str) => {
     }
 }
 checkPalindrome("Racecar");
+
+const sumDigits = (num) => {
+    const numStr = '' + num;
+    let sumOf = 0;
+    const numArr = [];
+    const numSplit = numStr.split("");
+    for (i = 0; i < numSplit.length; i++){
+        numArr.push(+numStr[i]);
+    }
+    for (i = 0; i<numArr.length; i++){
+        sumOf += numArr[i];
+    }
+    console.log(sumOf);
+}
+sumDigits(1002);
