@@ -38,3 +38,9 @@ const sumDigits = (num) => {
     console.log(sumOf);
 }
 sumDigits(1002);
+
+const calculateSide = (num1,num2) => {
+    let c = (Math.pow(num1, 2) + (Math.pow(num2, 2)))
+    console.log(`The length of your third side is: ${Math.sqrt(c)}`);
+}
+calculateSide(8,6);
