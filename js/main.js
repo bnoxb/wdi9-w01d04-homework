@@ -44,3 +44,12 @@ const calculateSide = (num1,num2) => {
     console.log(`The length of your third side is: ${Math.sqrt(c)}`);
 }
 calculateSide(8,6);
+
+const sumArray = (array) => {
+    let sumOf = 0;
+    for (let i = 0; i < array.length; i++){
+        sumOf += array[i];
+    }
+    return sumOf;
+}
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
