@@ -53,3 +53,28 @@ const sumArray = (array) => {
     return sumOf;
 }
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+const checkPrime = (num) => {
+    
+    let sqrtNum = Math.sqrt(num);
+    let isPrime = true;
+       for (let i = 2; i <= sqrtNum; i++){
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        } 
+    } 
+    return isPrime;
+}
+console.log(checkPrime(4));
+
+const printPrime = (limit) => {
+    for (let i = 1; i <= limit; i++){
+        if (checkPrime(i)){
+            console.log(`${i} is a Prime Number!!`);
+        } else {
+            console.log(`${i} is not a Prime number.`);
+        }
+    }
+}
+printPrime(97);
